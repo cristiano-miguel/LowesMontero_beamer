@@ -95,18 +95,6 @@
 
 \begin{frame}{A puzzle: low demand for effective health care}
   \begin{itemize}
-    \item Sub-Saharan Africa carries a disproportionate share of the global disease burden
-      \begin{itemize}
-        \item 90\% of malaria deaths, 70\% of people living with HIV, highest under-5 mortality
-      \end{itemize}
-    \item Yet demand for cheap, effective preventive care remains \highlight{puzzlingly low}
-      \refs{dupas_2011,banerjee_etal_2010,dupas_miguel_2017}
-      \begin{itemize}
-        \item An estimated 20 million children are not vaccinated \refs{who_2019};
-          in our region coverage is often below herd-immunity thresholds
-      \end{itemize}
-    \item Usual explanations: liquidity constraints, present bias, access costs, information
-    \pause
     \item \textbf{A missing piece? Mistrust of medicine}
       \begin{itemize}
         \item Ebola (West Africa 2014, DR Congo 2018--19): distrust of health workers hampered containment
@@ -124,97 +112,63 @@
     Did the colonial sleeping sickness campaigns leave a \textbf{lasting legacy of mistrust in medicine}
     that still shapes health behaviour and the success of health policy today?
   \end{block}
-  \vspace{0.2em}
-  \begin{columns}[T]
-    \begin{column}{0.47\textwidth}
-      \textbf{Three sub-questions}
+\end{frame}
+
+
+\begin{frame}{Research question}
+\textbf{Three sub-questions :}
       \begin{enumerate}
         \item \textbf{Behaviour:} do more exposed areas vaccinate less and refuse medical tests more?
         \item \textbf{Mechanism:} is the mistrust specific to medicine? How is it transmitted?
         \item \textbf{Policy:} do health projects work less well there today?
       \end{enumerate}
-    \end{column}
-    \begin{column}{0.50\textwidth}
-      \textbf{What we do}
+      \vspace{0.3em}
+      \textbf{This paper :}
       \begin{itemize}
         \item \textbf{Setting:} French campaigns, 1921--1956, in Cameroon and former French Equatorial
           Africa (AEF): forced examinations and injections with severe side effects
         \item \textbf{Data:} 30 years of military archives, digitized and matched to today's surveys
         \item \textbf{Identification:} OLS with rich controls, an IV, and a falsification test
       \end{itemize}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Preview of results}
-  \begin{columns}[c]
-    \begin{column}{0.50\textwidth}
-      \centering
-      {\small Effect of 15 years of campaign visits (out of 30)}\\[0.5em]
-      \begin{tikzpicture}[x=0.26cm,y=1cm]
-        % Panel A: vaccination
-        \node[anchor=west,font=\small\bfseries,inner sep=0] at (0,4.55) {Vaccination index};
-        \node[anchor=west,font=\scriptsize,text=softgray,inner sep=0] at (0,4.2) {sample mean: 53.2\% of 9 vaccines};
-        \fill[smileblue!40] (0,3.45) rectangle (5.8,3.9);
-        \node[anchor=west,font=\footnotesize] at (5.8,3.675) {$-5.8$ pp \;(OLS)};
-        \fill[smileblue] (0,2.85) rectangle (12.6,3.3);
-        \node[anchor=west,font=\footnotesize] at (12.6,3.075) {$-12.6$ pp \;(IV)};
-        % Panel B: refusals
-        \node[anchor=west,font=\small\bfseries,inner sep=0] at (0,2.05) {Blood test refusal};
-        \node[anchor=west,font=\scriptsize,text=softgray,inner sep=0] at (0,1.7) {sample mean: 4.8\%};
-        \fill[accent!40] (0,0.95) rectangle (5.4,1.4);
-        \node[anchor=west,font=\footnotesize] at (5.4,1.175) {$+5.4$ pp \;(OLS)};
-        \fill[accent] (0,0.35) rectangle (8.2,0.8);
-        \node[anchor=west,font=\footnotesize] at (8.2,0.575) {$+8.2$ pp \;(IV)};
-        \draw[black!60] (0,0.2) -- (0,4.0);
-      \end{tikzpicture}
-    \end{column}
-    \begin{column}{0.48\textwidth}
+  \textbf{Effect of 15 years of campaign visits (out of 30)}
       \begin{itemize}
-        \item \textbf{Vaccinations} fall by 11\% to 24\% of the mean
+        \item \textbf{Vaccinations} fall by 11\% to 24\% of the mean (depending on OLS vs IV methods)
         \item \textbf{Refusals} of a free blood test more than double
         \item \textbf{Health-seeking:} less contact with the health system, despite \emph{equal access}
         \item \textbf{Mechanism:} mistrust is \emph{specific to medicine} and passed on mostly within ethnic groups
         \item \textbf{Policy:} World Bank \emph{health} projects rated about one notch lower;
           no effect on other sectors
       \end{itemize}
-    \end{column}
-  \end{columns}
 \end{frame}
 
 \begin{frame}{Related literature}
-  \small
-  \begin{columns}[T]
-    \begin{column}{0.49\textwidth}
       \textbf{1. Historical roots of African development}\\
-      Slave trades, institutions, borders, colonial investments, missions\\
       \refs{nunn_2008,nunn_2009,gennaioli_rainer_2007,huillery_2009,michalopoulos_papaioannou_2013,michalopoulos_papaioannou_2016,alsan_2015,cage_rueda_2020,anderson_2018}
 
       \vspace{0.45em}
       \textbf{2. Demand for health in poor countries}\\
-      Prices, liquidity, present bias: mostly RCTs\\
       \refs{dupas_2011,banerjee_etal_2010,dupas_miguel_2017}
 
       \vspace{0.45em}
       \textbf{3. Trust: origins and consequences}\\
-      Trust and development \refs{algan_cahuc_2010,nunn_wantchekon_2011}\\
-      Trust and health \refs{alsan_wanamaker_2018,alsan_garrick_graziani_2019,martinez_bravo_stegmann_2022}
-    \end{column}
-    \begin{column}{0.49\textwidth}
+      \refs{algan_cahuc_2010,nunn_wantchekon_2011}\\
+      \refs{alsan_wanamaker_2018,alsan_garrick_graziani_2019,martinez_bravo_stegmann_2022}
+      
+      \vspace{0.45em}
       \textbf{4. Unintended effects of interventions}\\
-      Aid and conflict \refs{nunn_qian_2014,crost_etal_2014,dube_naidu_2015}\\
-      Historical health campaigns \refs{acemoglu_johnson_2007,kazianga_etal_2014}
+      \refs{nunn_qian_2014,crost_etal_2014,dube_naidu_2015}\\ 
+      \refs{acemoglu_johnson_2007,kazianga_etal_2014}
 
-      \vspace{0.7em}
+      \vspace{0.45em}
       \textbf{5. History, anthropology and epidemiology of the campaigns}\\
-      Archival and qualitative accounts of coercion, side effects and rumours\\
       \refs{headrick_1994,feldman_etal_2000,giles_vernick_2002,lachenal_2014,lachenal_2017}\\
-      Unsafe injections and blood-borne viruses \refs{pepin_labbe_2008,pepin_2011}
-    \end{column}
-  \end{columns}
+      \refs{pepin_labbe_2008,pepin_2011}
 \end{frame}
 
-\begin{frame}{Gaps in the literature and our contribution}
+\begin{frame}{Gaps in the literature and the contribution}
   \footnotesize
   \renewcommand{\arraystretch}{1.25}
   \begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.19\textwidth}
@@ -224,17 +178,17 @@
     \textbf{Literature} & \textbf{What was missing} & \textbf{What we add} \\
     \midrule
     Colonial legacies &
-      Institutions, slave trades, missions and public investments are well studied; the colonial \emph{medical campaigns} had never been studied quantitatively &
-      A new archival dataset: 30 years, 5 countries, subdistrict level. First quantitative evidence on the sleeping sickness campaigns \\
+      The colonial \emph{medical campaigns} had never been studied quantitatively &
+      A new archival dataset: First quantitative evidence on the sleeping sickness campaigns \\
     Demand for health &
-      Focus on present-day constraints; the \emph{origin} of mistrust is left unexplained &
+      The \emph{origin} of mistrust is left unexplained &
       Mistrust rooted in history as a demand-side constraint \\
     Trust and health &
-      Single events, mostly in the US (Tuskegee) and short-run responses to a disclosure &
+      Long term dynamics, study of historical roots of trust outside the US &
       A mass ``treatment'' of millions of people in 5 countries; persistence across generations \\
     Historians, anthropologists &
-      Rich case studies and anecdotes, but no causal test &
-      Causal estimates: IV and falsification test \\
+      Motly qualitative, without causal tests &
+      Causal estimates: econometrics methods \\
     Aid effectiveness &
       No link between historical experience and today's project success &
       World Bank health projects are less successful in exposed areas \\
@@ -251,10 +205,6 @@
     \begin{column}{0.56\textwidth}
       \begin{itemize}
         \item Lethal parasitic disease (\emph{trypanosomiasis}) transmitted by the \textbf{tsetse fly}
-          \begin{itemize}
-            \item Stage 1: fever, headaches, swollen lymph nodes
-            \item Stage 2: nervous system, lethargy, death
-          \end{itemize}
         \item Large epidemics in the early 20th century
         \item Motives for intervention: humanitarian, but also \textbf{labour supply} and scientific prestige
         \item French approach: treat the \emph{individual}\\
@@ -272,11 +222,10 @@
 
 \begin{frame}{The mobile medical teams}
   \begin{itemize}
-    \item Run by the \textbf{military}: 1 French doctor, African nurses, soldiers, porters
+    \item Run by the \textbf{military}: 1 French doctor, African nurses, soldiers.
     \item Villagers forced, often \highlight{at gunpoint}, to undergo examinations:
       neck palpation, blood tests, \textbf{lumbar punctures}
     \item Huge coverage: in Cameroon in 1928, 663{,}971 people examined, 17\% diagnosed
-    \item Priority given to public health over the individual patient
   \end{itemize}
   \vspace{0.6em}
   \centering
@@ -304,12 +253,14 @@
   \end{tikzpicture}
 \end{frame}
 
-\begin{frame}{The treatments: atoxyl and Lomidine}
+\begin{frame}{The treatments: Atoxyl and Lomidine}
+\centering
+What were the treatments ?
   \begin{columns}[T]
     \begin{column}{0.48\textwidth}
       \textbf{Atoxyl} (arsenic-based)
       \begin{itemize}
-        \item Therapeutic dose $\approx$ lethal dose
+        \item Therapeutic dose close to lethal dose
         \item Blindness in up to \highlight{20\%} of patients
         \item Could speed death in stage 2
         \item Used by the French until the 1930s, a decade after other colonisers stopped:
@@ -326,10 +277,6 @@
       \end{itemize}
     \end{column}
   \end{columns}
-  \vspace{1em}
-  \centering
-  \small A French doctor involved later called the injections\\
-  \emph{``pointless, dangerous, and therefore pointlessly dangerous''} \refs{lachenal_2017}
 \end{frame}
 
 \begin{frame}[label=main-memory]{The campaigns are remembered}
@@ -340,15 +287,21 @@
       collective memories of the sleeping sickness campaigns \refs{feldman_etal_2000}
     \item Central African Republic, late 1980s: rumours that the injections brought death
       \refs{giles_vernick_2002}
-    \item The Eton (Central Cameroon) still sing about the painful injections and police violence
+    \item The Eton (Central Cameroon) still sing about the painful injections and police violence : \textbf{Huge cultural heritage}
     \item Possible health channel too: reused needles $\Rightarrow$ spread of Hepatitis C
       \refs{pepin_2011} \backupbutton{bk-iatrogenic}{Details}
   \end{itemize}
+\end{frame}
+
+\begin{frame}{Conclusion of the story so far}
+
   \vspace{0.3em}
   \begin{block}{Our hypothesis}
     Coercion + harmful side effects + ineffective drugs $\Rightarrow$ mistrust in medicine,
     \textbf{transmitted across generations}
   \end{block}
+\vspace{0.45}
+\textbf{Let's see if the data support this hypothesis.}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
